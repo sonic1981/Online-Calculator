@@ -32,7 +32,7 @@ export const App: React.FC = () => {
 
   return <div className='w-96 bg-white-smoke border-2 flex flex-col'>
     <Screen buttonsPressed={buttonsPressed}></Screen>
-    <img src="logo.svg" alt="Equal Experts" className="bg-ee-blue p-5" />
+    <div className="bg-ee-blue p-5" />
     <Button text="C" buttonPress={() => clear()} className="flex-auto border-2 border-white py-5 hover:bg-ee-blue hover:text-white"></Button>
     <ButtonPad addValue={(val) => {
       setButtonsPressed([...buttonsPressed, val]);
